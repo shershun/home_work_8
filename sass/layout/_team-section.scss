@@ -1,0 +1,113 @@
+.team-section {
+  background-color: $colorsecond-bg;
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+.team-title {
+  display: block;
+  margin-right: auto;
+  margin-left: auto;
+
+  font-weight: bold;
+  font-size: 28px;
+  line-height: 32.81px;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: $colortitle-cl;
+}
+.team-img {
+  width: 100%;
+  height: auto;
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  background-color: $coloralt-title-cl;
+}
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .team-img {
+    width: 354px;
+    margin-bottom: 30px;
+    margin-left: 30px;
+    flex-basis: calc((100% - 60px) / 2);
+  }
+  .team-img-box {
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: -30px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .team-img-box {
+    display: flex;
+    margin-top: 50px;
+  }
+  .team-title {
+    font-size: 36px;
+    line-height: 42px;
+  }
+  .team-section {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
+  .team-img {
+    width: 270px;
+  }
+  .team-img:not(:last-child) {
+    margin-right: 30px;
+  }
+}
+.team-img-box {
+  margin-top: 30px;
+}
+.team-icon {
+  display: flex;
+  padding-top: 16px;
+  padding-bottom: 32px;
+  width: 206px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.team-icon-item:not(:last-child) {
+  margin-right: 10px;
+}
+.team-icon-link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  fill: rgba(175, 177, 184, 1);
+  background-color: $coloralt-title-cl;
+  transition-property: background-color, color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  &:hover,
+  &:focus {
+    fill: $coloralt-title-cl;
+    background-color: $coloraccent-cl;
+  }
+}
+.team-icons-svg {
+  width: 20px;
+  height: 20px;
+}
+
+.team-name {
+  margin: 0px;
+  margin-top: 30px;
+
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.18;
+  text-align: center;
+  color: $colormain-text-cl;
+}
+.team-prof {
+  margin: 0px;
+  margin-top: 10px;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 1.18;
+  text-align: center;
+  color: $coloralt-text-cl;
+}

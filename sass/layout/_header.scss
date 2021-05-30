@@ -1,0 +1,113 @@
+header {
+  border-bottom: 1px solid #ececec;
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  right: 0px;
+  background-color: $coloralt-title-cl;
+  z-index: 3;
+}
+.nav__page {
+  display: flex;
+  align-items: center;
+}
+
+.nav__site {
+  display: flex;
+  margin-left: 93px;
+  @media screen and (max-width: 767px) {
+    display: none;
+  }
+}
+@media screen and (max-width: 767px) {
+}
+.nav__link.nav__link-akcent {
+  display: inline-block;
+  color: $coloraccent-cl;
+  position: relative;
+}
+.nav__link.nav__link-akcent::after {
+  display: block;
+  position: absolute;
+  content: "";
+  height: 4px;
+  width: 100%;
+  background-color: $coloraccent-cl;
+  left: 0;
+  bottom: 0;
+  border-radius: 2px;
+}
+
+.nav__site-item {
+  margin-right: 50px;
+}
+.nav__site-item:last-child {
+  margin-right: 0px;
+}
+
+.nav__link {
+  display: block;
+  padding-top: 32px;
+  padding-bottom: 32px;
+
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  color: $colormain-text-cl;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  &:hover,
+  &:focus {
+    color: $coloraccent-cl;
+  }
+}
+.nav__adres {
+  @media screen and (max-width: 767px) {
+    display: none;
+  }
+  @media screen and (min-width: 1200px) {
+    display: flex;
+    margin-left: auto;
+  }
+}
+.nav__adres .nav__adres-item + .nav__adres-item {
+  @media screen and (min-width: 1200px) {
+    margin-left: 50px;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .nav__adres-item {
+    padding-top: 5px;
+    padding-bottom: 5px;
+  }
+  .nav__adres {
+    margin-left: auto;
+  }
+}
+.svg-fone {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-right: 10px;
+  fill: currentColor;
+  width: 16px;
+  height: 16px;
+}
+.nav__adres-link {
+  display: flex;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.15;
+
+  color: $coloralt-text-cl;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  &:hover,
+  &:focus {
+    color: $coloraccent-cl;
+  }
+  @media screen and (min-width: 1200px) {
+    padding-top: 32px;
+    padding-bottom: 32px;
+  }
+}

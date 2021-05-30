@@ -1,0 +1,46 @@
+.footer-input {
+  background-color: transparent;
+  color: $coloralt-title-cl;
+  width: 100%;
+  height: 50px;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  box-sizing: border-box;
+  border-radius: 4px;
+  padding-left: 16px;
+  @media screen and (max-width: 1199px) {
+    max-width: 450px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    margin-right: 12px;
+    padding-left: 16px;
+    margin-bottom: 0px;
+    width: 358px;
+  }
+}
+.footer-input::placeholder {
+  color: rgba(117, 117, 117, 0.5);
+  font-size: 16px;
+  line-height: 1.25;
+  letter-spacing: 0.03em;
+  color: rgba(255, 255, 255, 0.6);
+}
+.icon-send {
+  fill: $coloralt-title-cl;
+  width: 25px;
+  height: 25px;
+}
+.footer-send-container {
+  @media screen and (max-width: 1199px) {
+    text-align: center;
+  }
+  @media screen and (min-width: 1200px) {
+    margin-left: 93px;
+  }
+}
+.footer-send-box {
+  @media screen and (min-width: 1200px) {
+    display: flex;
+    margin-top: 30px;
+  }
+}
