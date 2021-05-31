@@ -14,21 +14,7 @@ img {
   max-width: 100%;
   height: auto;
 }
-body {
-  font-family: "Roboto", sans-serif;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 14px;
-  line-height: 1.7;
-  background-color: $coloralt-title-cl;
 
-  @media (min-width: 768px) {
-    padding-top: 80px;
-  }
-  @media (max-width: 767px) {
-    padding-top: 60px;
-  }
-}
 .list {
   padding: 0;
   margin: 0;
